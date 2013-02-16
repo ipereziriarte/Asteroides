@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_medium"
+    tools:context=".Localizacion" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/padding_medium"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="@dimen/font_size_title" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="&quot;*&quot;" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_jugar"
+                android:textSize="@dimen/font_size_title" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_configure"
+                android:textSize="@dimen/font_size_title" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_about"
+                android:textSize="@dimen/font_size_title" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_exit"
+                android:textSize="@dimen/font_size_title" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
