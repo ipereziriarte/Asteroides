@@ -14,13 +14,21 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="org.example.asteroides.Localizacion"
+            android:name="org.example.asteroides.AsteroidesActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="org.example.asteroides.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="org.example.asteroides.Localizacion" android:theme="@android:style/Theme.Dialog">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.asteroides.Localizacion" />
         </activity>
     </application>
 

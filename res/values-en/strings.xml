@@ -8,5 +8,6 @@
     <string name="btn_configure">Configure</string>
     <string name="btn_about">About</string>
     <string name="btn_exit">Exit</string>
+     <string name="about">This software was developed as an example for an Android Actibity</string>
 
 </resources>

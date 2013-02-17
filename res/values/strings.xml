@@ -8,5 +8,7 @@
     <string name="btn_configure">Configurar</string>
     <string name="btn_about">Acerca de</string>
     <string name="btn_exit">Salir</string>
+    <string name="about">Este programa ha sido desarrollado como ejemplo en el curso de Android para demostrar cómo se pueden lanzar nuevas actividades desde la actividad principal</string>
+    <string name="title_activity_about">About</string>
 
 </resources>
