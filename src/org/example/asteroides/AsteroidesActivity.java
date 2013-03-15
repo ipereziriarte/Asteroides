@@ -12,12 +12,15 @@ import android.widget.Button;
 public class AsteroidesActivity extends Activity {
 	private Button btnAbout;
 	private Button btnExit;
+	private Button btnPrefs;
+	private Button btnScore;
+	public static IPointsStore almacen = new AlmacenPuntuacionesArray();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_localizacion);
-        btnAbout = (Button) findViewById(R.id.button3);
+        btnAbout = (Button) findViewById(R.id.btn_about);
         btnAbout.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -26,7 +29,7 @@ public class AsteroidesActivity extends Activity {
 			}
 		});
         
-        btnExit = (Button) findViewById(R.id.button4);
+        btnExit = (Button) findViewById(R.id.btn_exit);
         btnExit.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -35,6 +38,28 @@ public class AsteroidesActivity extends Activity {
 				
 			}
 		});
+        
+        btnPrefs = (Button) findViewById(R.id.btn_configure);
+        btnPrefs.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				launchPreferences(v);
+				
+			}
+		});
+        
+        btnScore = (Button) findViewById(R.id.btn_score);
+        btnScore.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				lanzarPuntuaciones(v);
+				
+			}
+		});
+        
+        
     }
 
     @Override
@@ -51,6 +76,11 @@ public class AsteroidesActivity extends Activity {
 		case R.id.about:
 			launchAbout(null);
 			break;
+		case R.id.config:
+
+            launchPreferences(null);
+
+            break;
 		default:
 			break;
 		}
@@ -66,5 +96,18 @@ public class AsteroidesActivity extends Activity {
     	Intent i = new Intent(this, AboutActivity.class);
     	startActivity(i);
     }
+    
+    public void launchPreferences(View view){
+    	Intent i = new Intent(this, SettingsActivity.class);
+    	startActivity(i);
+    }
+    
+    public void lanzarPuntuaciones(View view) {
+
+    	Intent i = new Intent(this, Puntuaciones.class);
+
+    	startActivity(i);
+
+    	}
     
 }

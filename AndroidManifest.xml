@@ -25,11 +25,17 @@
         <activity
             android:name="org.example.asteroides.AboutActivity"
             android:label="@string/title_activity_about"
-            android:parentActivityName="org.example.asteroides.Localizacion" android:theme="@android:style/Theme.Dialog">
+            android:parentActivityName="org.example.asteroides.Localizacion"
+            android:theme="@android:style/Theme.Dialog" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.example.asteroides.Localizacion" />
         </activity>
+        <activity
+            android:name="org.example.asteroides.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity android:name="Puntuaciones"></activity>
     </application>
 
 </manifest>

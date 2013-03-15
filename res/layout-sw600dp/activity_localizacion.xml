@@ -18,28 +18,28 @@
         android:textSize="@dimen/font_size_big" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btn_play"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_play"
         android:textSize="@dimen/font_size_big" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_configure"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_configure"
         android:textSize="@dimen/font_size_big" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_about"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_about"
         android:textSize="@dimen/font_size_big" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn_exit"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_exit"
