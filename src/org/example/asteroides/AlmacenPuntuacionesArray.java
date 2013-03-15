@@ -14,7 +14,7 @@ public class AlmacenPuntuacionesArray implements IPointsStore{
 
          mPuntuaciones.add("111000 Pedro Martinez");
 
-         mPuntuaciones.add("011000 Paco Pérez");
+         mPuntuaciones.add("011000 Paco PÃ©rez");
 
     }
 
